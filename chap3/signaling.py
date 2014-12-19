@@ -52,7 +52,7 @@ class ThreadB(object):
 
 def main():
     """
-    Prints 'Hello' followed by 'World!'.
+    Prints 'statement a1' followed by 'statement b1'.
     """
     a1done = Semaphore(0)
     Thread(target=ThreadA(a1done).run).start()
