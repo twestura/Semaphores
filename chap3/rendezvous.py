@@ -72,7 +72,7 @@ def main():
     a1printed = Semaphore(0)
     b1printed = Semaphore(0)
     Thread(target=ThreadA(a1printed, b1printed).run).start()
-    Thread(target=ThreadB(b1printed, b1printed).run).start()
+    Thread(target=ThreadB(a1printed, b1printed).run).start()
     return 0
 
 
